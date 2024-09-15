@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-
-h1 {
-    font-family:"Playfair Display";
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 a {
     text-decoration: none;
@@ -10,5 +7,55 @@ a {
 
 header {
     display: flex;
-    
+    justify-content: space-between;
+    margin: 65px 71px auto 92px;
+}
+
+.headerbg {
+    width: 1920px;
+}
+
+body {
+    background-image: url('../images/bgheader.jpg');
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-color: #0B1D26;
+}
+
+.logo {
+    font-weight: 800;
+    letter-spacing: 2px;
+    font-size: 32px;
+    font-family:"Playfair Display";    
+    color: white;
+}
+
+.menu {
+    display: flex;
+    gap: 30px;
+    margin: 6px;
+}
+
+.menu a {
+    font-family: "Poppins";
+    font-size: 18px;
+    font-weight: 700;
+    color: white;
+}
+
+.account {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.account a {
+    font-size: 17px;
+    font-family: "Poppins";
+    color: white;
+    font-weight: 700;
+}
+
+.account img {
+    height: 24px;
 }
