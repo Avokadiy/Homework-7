@@ -154,3 +154,63 @@ body {
     padding: 24px 28px;
     font-weight: 700;
 }
+
+.first_part {
+    display: grid;
+    grid-template-columns: auto 566px;
+    margin: 737px 221px 0 237px;
+    max-width: 1462px;
+}
+
+.grey_number {
+    font-size: 240px;
+    font-weight: 700;
+    font-family: "Poppins";
+    color: white;
+    opacity: 10%;
+    position: absolute;
+    margin-top: 38px;
+}
+
+.inside_text {
+    margin: 194px 130px 65px 134px;
+}
+
+.orange_text {
+    color: #FBD784;
+    font-size: 18px;
+    font-family: 'Poppins';
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    letter-spacing: 6px;
+}
+
+.orange_text:before {
+    content: '';
+    width: 72px;
+    height: 2px;
+    margin-right: 24px;
+    display: block;
+    background-color: orange;
+}
+
+.text_title {
+    color: white;
+    font-size: 64px;
+    font-weight: 600;
+    font-family: "Playfair Display";
+    margin-top: 33px;
+    max-width: 500px;
+    line-height: 86px;
+}
+
+.main_text {
+    color: white;
+    font-size: 13px;
+    font-weight: 700;
+    font-family: "Poppins";
+    line-height: 32px;
+    margin-top: 23px;
+    letter-spacing: 0.56px;
+}
