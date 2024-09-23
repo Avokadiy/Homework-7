@@ -11,10 +11,6 @@ header {
     margin: 65px 71px auto 92px;
 }
 
-.headerbg {
-    width: 1920px;
-}
-
 body {
     background-image: url('../images/bgheader.jpg');
     background-position: absolute;
@@ -26,7 +22,7 @@ body {
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 32px;
-    font-family:"Playfair Display";    
+    font-family: "Playfair Display";
     color: white;
 }
 
@@ -71,7 +67,7 @@ body {
     margin: 258px 0 0 77px;
 }
 
-.social_links p {
+.links_text {
     font-family: "Poppins";
     font-size: 18px;
     color: white;
@@ -79,7 +75,7 @@ body {
     letter-spacing: 0.5px;
 }
 
-.social_links img {
+.social_link {
     height: 24px;
     padding: 10px 3px;
 }
@@ -125,12 +121,12 @@ body {
     color: white;
 }
 
-.intro_arrow p {
+.arrow_text {
     font-size: 18px;
     font-family: "Poppins";
 }
 
-.intro_arrow img {
+.arrow_img {
     height: 24px;
     margin-left: 5px;
 }
@@ -144,7 +140,7 @@ body {
     align-items: flex-end;
 }
 
-.right_nav div {
+.nav_item {
     display: flex;
     color: white;
     font-family: "Poppins";
@@ -158,7 +154,7 @@ body {
 .first_part {
     display: grid;
     grid-template-columns: auto 566px;
-    margin: 737px 221px 0 237px;
+    /* margin: 737px 221px 0 237px; */
     max-width: 1462px;
 }
 
@@ -219,7 +215,7 @@ body {
     margin-top: 32px;
 }
 
-.first_arrow a {
+.first_arrow_link {
     color: #FBD784;
     font-size: 14px;
     font-family: "Poppins";
@@ -229,7 +225,7 @@ body {
 .second_part {
     display: grid;
     grid-template-columns: 566px auto;
-    margin: 196px 221px 0 237px;
+    /* margin: 196px 221px 0 237px; */
     max-width: 1462px;
 }
 
@@ -259,4 +255,14 @@ body {
     line-height: 32px;
     margin-top: 26px;
     letter-spacing: 0.56px;
+}
+
+.parts {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 200px;
+    max-width: 1462px;
+    margin-top: 737px;
 }
