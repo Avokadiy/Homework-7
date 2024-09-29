@@ -164,9 +164,16 @@ main {
     font-family: "Poppins";
     font-size: 18px;
     align-items: center;
-    border-right: 2px solid white;
+    border-right: thin solid white;
     padding: 24px 28px;
     font-weight: 700;
+}
+
+.item_start.visible,
+.item_01.visible,
+.item_02.visible,
+.item_03.visible {
+    border-right: 2px solid white;
 }
 
 .first_part {

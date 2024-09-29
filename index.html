@@ -11,7 +11,7 @@
 
 <body>
     <header>
-        <div class="logo">MNTN</div>
+        <div id="logo" class="logo">MNTN</div>
         <div class="menu">
             <a class="menu_link" href="#javascript:void(0)">Equipment</a>
             <a class="menu_link" href="#javascript:void(0)">About us</a>
@@ -24,10 +24,10 @@
     </header>
 
     <nav class="right_nav">
-        <a class="nav_item" href="#javascript:void(0)">Start</a>
-        <a class="nav_item" href="#javascript:void(0)">01</a>
-        <a class="nav_item" href="#javascript:void(0)">02</a>
-        <a class="nav_item" href="#javascript:void(0)">03</a>
+        <a class="nav_item item_start" href="#">Start</a>
+        <a class="nav_item item_01" href="#first_part">01</a>
+        <a class="nav_item item_02" href="#second_part">02</a>
+        <a class="nav_item item_03" href="#third_part">03</a>
     </nav>
 
     <main>
@@ -52,7 +52,7 @@
         <div class="background"></div>
 
         <div class="parts">
-            <section class="first_part">
+            <section id="first_part" class="first_part">
                 <div class="grey_number">01</div>
                 <div class="inside_text">
                     <div class="orange_text">GET STARTED</div>
@@ -78,7 +78,7 @@
                 </div>
             </section>
 
-            <section class="second_part">
+            <section id="second_part" class="second_part">
                 <div class="second_part_img">
                     <img src="/images/02.jpg" alt="">
                 </div>
@@ -102,7 +102,7 @@
                 </div>
             </section>
 
-            <section class="third_part">
+            <section id="third_part" class="third_part">
                 <div class="first_part_text">
                     <div class="grey_number">03</div>
                     <div class="third_inside_text">
@@ -150,6 +150,7 @@
             <a class="footer_item" href="#javascript:void(0)">Press</a>
         </div>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>
