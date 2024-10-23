@@ -4,27 +4,56 @@ const first = document.querySelector('.item_01');
 const second = document.querySelector('.item_02');
 const third = document.querySelector('.item_03');
 // блоки
-const startPos = document.querySelector('.intro');
+const startPos = document.querySelector('.background');
 const firstPos = document.querySelector('.first_part');
 const secondPos = document.querySelector('.second_part');
 const thirdPos = document.querySelector('.third_part');
 
-document.addEventListener('scroll', function () {
+function scroller() {
     const posStart = startPos.getBoundingClientRect().top;
-    start.classList.toggle('visible', posStart + startPos.clientHeight <= window.innerHeight && posStart >= 0);
-});
+    const posHeight = startPos.getBoundingClientRect().height;
+    start.classList.toggle('visible', posStart <= 0 && -1 * posStart <= posHeight - 700);
 
-document.addEventListener('scroll', function () {
     const pos01 = firstPos.getBoundingClientRect().top;
-    first.classList.toggle('visible', pos01 + first.clientHeight <= window.innerHeight && pos01 >= 0);
-});
+    const pos01Height = firstPos.getBoundingClientRect().height;
+    first.classList.toggle('visible', pos01 <= 220 && -1 * pos01 <= pos01Height / 2);
 
-document.addEventListener('scroll', function () {
     const pos02 = secondPos.getBoundingClientRect().top;
-    second.classList.toggle('visible', pos02 + second.clientHeight <= window.innerHeight && pos02 >= 0);
-});
+    const pos02Height = secondPos.getBoundingClientRect().height;
+    second.classList.toggle('visible', pos02 <= pos01Height / 2 && -1 * pos02 <= pos02Height / 2)
 
-document.addEventListener('scroll', function () {
     const pos03 = thirdPos.getBoundingClientRect().top;
-    third.classList.toggle('visible', pos03 + third.clientHeight <= window.innerHeight && pos03 >= 0);
-});
+    const pos03Height = thirdPos.getBoundingClientRect().height;
+    third.classList.toggle('visible', pos03 <= pos02Height / 2 && -1 * pos03 <= pos03Height / 2);
+}
+
+document.addEventListener('scroll', scroller);
+
+// document.addEventListener('scroll', function (e) {
+//     e.clientY;
+//     const posStart = startPos.getBoundingClientRect().top;
+//     const posHeight = startPos.getBoundingClientRect().height;
+//     start.classList.toggle('visible', posStart <= 0 && -1 * posStart <= posHeight - 700);
+// });
+
+// document.addEventListener('scroll', function () {
+//     const pos01 = firstPos.getBoundingClientRect().top;
+//     const pos01Height = firstPos.getBoundingClientRect().height;
+//     first.classList.toggle('visible', pos01 <= 220 && -1 * pos01 <= pos01Height / 2 + 200);
+// });
+
+// document.addEventListener('scroll', function () {
+//     const pos02 = secondPos.getBoundingClientRect().top;
+//     const pos02Height = secondPos.getBoundingClientRect().height;
+//     const pos01Height = firstPos.getBoundingClientRect().height;
+//     second.classList.toggle('visible', pos02 <= pos01Height / 2 && -1 * pos02 <= pos02Height / 2 + 200);
+// });
+
+// document.addEventListener('scroll', function () {
+//     const pos03 = thirdPos.getBoundingClientRect().top;
+//     const pos03Height = thirdPos.getBoundingClientRect().height;
+//     const pos02Height = secondPos.getBoundingClientRect().height;
+//     third.classList.toggle('visible', pos03 <= pos02Height / 2 && -1 * pos03 <= pos03Height / 2 + 200);
+// });
+
+// Переписать код чтобы всё было кратко и с переменными
