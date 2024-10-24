@@ -16,44 +16,15 @@ function scroller() {
 
     const pos01 = firstPos.getBoundingClientRect().top;
     const pos01Height = firstPos.getBoundingClientRect().height;
-    first.classList.toggle('visible', pos01 <= 220 && -1 * pos01 <= pos01Height / 2);
+    first.classList.toggle('visible', pos01 <= 220 && -1 * pos01 <= pos01Height / 2 - 20);
 
     const pos02 = secondPos.getBoundingClientRect().top;
     const pos02Height = secondPos.getBoundingClientRect().height;
-    second.classList.toggle('visible', pos02 <= pos01Height / 2 && -1 * pos02 <= pos02Height / 2)
+    second.classList.toggle('visible', pos02 <= pos01Height / 2 && -1 * pos02 <= pos02Height / 2 - 20);
 
     const pos03 = thirdPos.getBoundingClientRect().top;
     const pos03Height = thirdPos.getBoundingClientRect().height;
-    third.classList.toggle('visible', pos03 <= pos02Height / 2 && -1 * pos03 <= pos03Height / 2);
+    third.classList.toggle('visible', pos03 <= pos02Height / 2 && -1 * pos03 <= pos03Height / 2 - 20);
 }
 
 document.addEventListener('scroll', scroller);
-
-// document.addEventListener('scroll', function (e) {
-//     e.clientY;
-//     const posStart = startPos.getBoundingClientRect().top;
-//     const posHeight = startPos.getBoundingClientRect().height;
-//     start.classList.toggle('visible', posStart <= 0 && -1 * posStart <= posHeight - 700);
-// });
-
-// document.addEventListener('scroll', function () {
-//     const pos01 = firstPos.getBoundingClientRect().top;
-//     const pos01Height = firstPos.getBoundingClientRect().height;
-//     first.classList.toggle('visible', pos01 <= 220 && -1 * pos01 <= pos01Height / 2 + 200);
-// });
-
-// document.addEventListener('scroll', function () {
-//     const pos02 = secondPos.getBoundingClientRect().top;
-//     const pos02Height = secondPos.getBoundingClientRect().height;
-//     const pos01Height = firstPos.getBoundingClientRect().height;
-//     second.classList.toggle('visible', pos02 <= pos01Height / 2 && -1 * pos02 <= pos02Height / 2 + 200);
-// });
-
-// document.addEventListener('scroll', function () {
-//     const pos03 = thirdPos.getBoundingClientRect().top;
-//     const pos03Height = thirdPos.getBoundingClientRect().height;
-//     const pos02Height = secondPos.getBoundingClientRect().height;
-//     third.classList.toggle('visible', pos03 <= pos02Height / 2 && -1 * pos03 <= pos03Height / 2 + 200);
-// });
-
-// Переписать код чтобы всё было кратко и с переменными
