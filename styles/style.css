@@ -10,7 +10,7 @@ header {
     justify-content: space-between;
     width: 1760px;
     padding: 65px 71px 0 92px;
-    z-index: 1;
+    z-index: 2;
     position: absolute;
 }
 
@@ -56,6 +56,11 @@ main {
     gap: 30px;
     margin: 6px;
     z-index: 1;
+}
+
+.menu_button {
+    background-color: transparent;
+    border: 0;
 }
 
 .menu_link {
@@ -186,7 +191,7 @@ main {
 .item_01.visible,
 .item_02.visible,
 .item_03.visible {
-    border-right: 2px solid green;
+    border-right: 2px solid white;
 }
 
 .parts {
@@ -476,8 +481,80 @@ footer {
     padding: 45px 0 57px;
 }
 
+/* menu for 480px */
+.menu_scroller {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 350px;
+    left: 100%;
+    top: 0;
+    z-index: 2;
+    background-color: white;
+    transition: top 1s;
+    border-radius: 0 0 10px 10px;
+}
+
+.menu_scroller.active {
+    left: 0;
+    transition: top 1s;
+}
+
+.menu_inside {
+    margin: 65px 26px 0 38px;
+}
+
+.scroller_logo {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+}
+
+.scroller_header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.scroller_bottom {
+    display: grid;
+    grid-template-columns: 276px auto;
+    margin-top: 72px
+}
+
+.scroller_links {
+    display: grid;
+    gap: 28px;
+}
+
+.scroller_link {
+    font-family: 'Poppins';
+    display: block;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+.scroller_account {
+    display: flex;
+    align-items: start;
+    gap: 9px;
+}
+
+.scroller_account_img {
+    height: 28px;
+    margin-top: -5px;
+}
+
+.scroller_account_link {
+    font-family: 'Poppins';
+    font-size: 17px;
+    margin-top: 2px;
+    color: black;
+    font-weight: 600;
+}
+
 @media (max-width: 1536px) {
-    
+
     .background {
         background-size: contain;
     }
@@ -591,7 +668,7 @@ footer {
 }
 
 @media (max-width: 1024px) {
-    
+
     .background {
         background-size: cover;
         padding-top: 140%;
@@ -639,7 +716,7 @@ footer {
     }
 
     .grey_number {
-        margin-left: 50px; 
+        margin-left: 50px;
     }
 
     .inside_text {
@@ -717,7 +794,7 @@ footer {
 
     footer {
         grid-template-columns: 440px 245px 184px;
-        padding: 0 32px 10px; 
+        padding: 0 32px 10px;
     }
 }
 
@@ -876,7 +953,7 @@ footer {
         height: 509px;
     }
 
-    .second_part_text{
+    .second_part_text {
         margin-left: 0px;
     }
 

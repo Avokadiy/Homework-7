@@ -28,3 +28,11 @@ function scroller() {
 }
 
 document.addEventListener('scroll', scroller);
+
+document.querySelector('.menu_button').addEventListener('click', () => {
+    document.querySelector('.menu_scroller').classList.add('active');
+})
+
+document.querySelector('.scroller_close').addEventListener('click', () => {
+    document.querySelector('.menu_scroller').classList.remove('active');
+})
